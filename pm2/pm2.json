@@ -1,0 +1,13 @@
+[
+  {
+    "name": "remote_manage",
+    "script": "./app.js",
+    "merge_logs" : true,
+    "error_file": "/letv/logs/node/err_remote.log",
+    "out_file": "/letv/logs/node/out_remote.log",
+    "pid_file": "/letv/logs/node/pc_remote.pid",
+    "log_date_format": "YYYY-MM-DD HH:mm",
+    "max_memory_restart": "500M",
+    "instances": 1
+  }
+]
