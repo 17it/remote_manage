@@ -12,7 +12,9 @@ pomelo stop
 pomelo start --daemon
 echo '---------------------------------------reload pomelo end---------------------------------------'
 
-# todo 备份logs
+ls_date=`date +%Y%m%d`
+zip -R logs-${ls_date}.zip ./logs/*
+echo '---------------------------------------backup logs end---------------------------------------'
 
 sudo pm2 list
 sudo pomelo list
