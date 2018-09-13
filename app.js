@@ -20,4 +20,4 @@ app.use(route.get('/dev-game', async (ctx, next) => {
   ctx.body = res;
 }));
 
-app.listen(3005);
+app.listen(3001);
